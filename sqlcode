@@ -1,0 +1,79 @@
+CREATE TABLE TEAM (
+    T_ID        VARCHAR2(6)     PRIMARY KEY,
+    T_NAME      VARCHAR2(30),
+    S_ID        VARCHAR2(30),
+    CONFERENCE  VARCHAR2(15),
+    DIVISION    VARCHAR2(15),
+    DIRECTOR    VARCHAR2(30),
+    RANK        NUMBER(2,0)
+);
+ 
+insert into TEAM values ('TEAM01','Boston Celtics','STADUIM01','Eastern','Atlantic','Brad Stevens',1);
+insert into TEAM values ('TEAM02','Brooklyn Nets','STADUIM02','Eastern','Atlantic','Kenny Atkinson',2);
+insert into TEAM values ('TEAM03','New York Knicks','STADUIM03','Eastern','Atlantic','David Fizdale',3);
+insert into TEAM values ('TEAM04','Philadelphia 76ers','STADUIM04','Eastern','Atlantic','Brett Brown',4);
+insert into TEAM values ('TEAM05','Toronto Raptors','STADUIM05','Eastern','Atlantic','Nick Nurse',5);
+insert into TEAM values ('TEAM06','Chicago Bulls','STADUIM06','Eastern','Central','Fred Hoiberg',6);
+insert into TEAM values ('TEAM07','Cleveland Cavaliers','STADUIM07','Eastern','Central','Larry Drew',7);
+insert into TEAM values ('TEAM08','Detroit Pistons','STADUIM08','Eastern','Central','Dwayne Casey',8);
+insert into TEAM values ('TEAM09','Indiana Pacers','STADUIM09','Eastern','Central','Nate McMillan',9);
+insert into TEAM values ('TEAM10','Milwaukee Bucks','STADUIM10','Central','Mike Budenholzer',10);
+insert into TEAM values ('TEAM11','Atlanta Hawks','STADUIM11','Eastern','Southeast','Lloyd Pierce',11);
+insert into TEAM values ('TEAM12','Charlotte Hornets','STADUIM12','Eastern','Southeast','James Borrego',12);
+insert into TEAM values ('TEAM13','Miami Heat','STADUIM13','Eastern','Southeast','Erik Spoelstra',13);
+insert into TEAM values ('TEAM14','Orlando Magic','STADUIM14','Eastern','Southeast','Steve Clifford',14);
+insert into TEAM values ('TEAM15','Washington Wizards','STADUIM15','Eastern','Southeast','Scott Brooks',15);
+insert into TEAM values ('TEAM16','Denver Nuggets','STADUIM16','Northwest','Southern','Michael Malone',16);
+insert into TEAM values ('TEAM17','Minnesota Timberwolves','STADUIM17','Target Center','Northwest','Southern','Tom Thibodeau',17);
+insert into TEAM values ('TEAM18','Portland Trail Blazers','STADUIM18','Moda Center','Northwest','Southern','Terry Stotts',18);
+insert into TEAM values ('TEAM19','Oklahoma City Thunder','STADUIM19','Chesapeake Energy Arena','Northwest','Southern','Billy Donovan',19);
+insert into TEAM values ('TEAM20','Utah Jazz','STADUIM20','Northwest','Southern','Quin Snyder',20);
+insert into TEAM values ('TEAM21','Golden State Warriors','STADUIM21','Pacific','Southern','Steve Kerr',21);
+insert into TEAM values ('TEAM22','Los Angeles Clippers','STADUIM22','Pacific','Southern','Doc Rivers',22);
+insert into TEAM values ('TEAM23','Los Angeles Lakers','STADUIM22','Pacific','Southern','Luke Walton',23);
+insert into TEAM values ('TEAM24','Phoenix Suns','STADUIM23','Pacific','Southern','Igor Kokoskov',24);
+insert into TEAM values ('TEAM25','Sacramento Kings','STADUIM24','Pacific','Southern','Dave Joerger',25);
+insert into TEAM values ('TEAM26','Dallas Mavericks','STADUIM25','Southwest','Southern','Rick Carlisle',26);
+insert into TEAM values ('TEAM27','Houston Rockets','STADUIM26','Southwest','Southern','Mike D`Antoni',27);
+insert into TEAM values ('TEAM28','Memphis Grizzlies','STADUIM27','Southwest','Southern','J.B. Bickerstaff',28);
+insert into TEAM values ('TEAM29','New Orleans Pelicans','STADUIM28','Southwest','Southern','Alvin Gentry',29);
+insert into TEAM values ('TEAM30','San Antonio Spurs','STADUIM29','Southwest','Southern','Gregg Popovich',30);
+
+CREATE TABLE STADIUM (
+    S_ID        VARCHAR2(9) PRIMARY KEY,
+    S_NAME      VARCHAR(30),
+    HOMETOWN    VARCHAR(30),
+    SEAT        NUMBER(7),
+    HOME_T_ID   VARCHAR(6),
+    AWAY_T_ID   VARCHAR(6)
+); 
+
+insert into STADIUM values ('STADIUM01','TD Garden','Boston',18624);
+insert into STADIUM values ('STADIUM02','Barclays Center','Brooklyn',17732);
+insert into STADIUM values ('STADIUM03','Madison Square Garden','Manhattan',19812);
+insert into STADIUM values ('STADIUM04','Wells Fargo Center','Philadelphia',20478);
+insert into STADIUM values ('STADIUM05','Scotiabank Arena','Toronto',19800);
+insert into STADIUM values ('STADIUM06','United Center','Chicago',20917);
+insert into STADIUM values ('STADIUM07','Quicken Loans Arena','Cleveland',20562);
+insert into STADIUM values ('STADIUM08','Little Caesars Arena','Detroit',20491);
+insert into STADIUM values ('STADIUM09','Bankers Life Fieldhouse','Indianapolis',17923);
+insert into STADIUM values ('STADIUM10','Fiserv Forum','Milwaukee',17500);
+insert into STADIUM values ('STADIUM11','State Farm Arena','Atlanta',18118);
+insert into STADIUM values ('STADIUM12','Spectrum Center','Charlotte',19077);
+insert into STADIUM values ('STADIUM13','American Airlines Arena','Miami',19600);
+insert into STADIUM values ('STADIUM14','Amway Center','Orlando',18846);
+insert into STADIUM values ('STADIUM15','Capital One Arena','Washington D.C.',20356);
+insert into STADIUM values ('STADIUM16','Pepsi Center','Denver',19520);
+insert into STADIUM values ('STADIUM17','Target Center','Twin Cities',19356);
+insert into STADIUM values ('STADIUM18','Moda Center','Portland',19393);
+insert into STADIUM values ('STADIUM19','Chesapeake Energy Arena','Oklahoma City',18203);
+insert into STADIUM values ('STADIUM20','Vivint Smart Home Arena','Salt Lake City',18306);
+insert into STADIUM values ('STADIUM21','Oracle Arena','Oakland',19596);
+insert into STADIUM values ('STADIUM22','Staples Center','Los Angeles',19060);
+insert into STADIUM values ('STADIUM23','Talking Stick Resort Arena','Phoenix',18422);
+insert into STADIUM values ('STADIUM24','Golden 1 Center','Sacramento',17608);
+insert into STADIUM values ('STADIUM25','American Airlines Center','Dallas',19200);
+insert into STADIUM values ('STADIUM26','Toyota Center','Houston',18055);
+insert into STADIUM values ('STADIUM27','FedExForum','Memphis',18119);
+insert into STADIUM values ('STADIUM28','Smoothie King Center','New Orleans',16867);
+insert into STADIUM values ('STADIUM29','AT&T Center','San Antonio',18418);
