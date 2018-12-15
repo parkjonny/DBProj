@@ -77,3 +77,41 @@ insert into STADIUM values ('STADIUM26','Toyota Center','Houston',18055);
 insert into STADIUM values ('STADIUM27','FedExForum','Memphis',18119);
 insert into STADIUM values ('STADIUM28','Smoothie King Center','New Orleans',16867);
 insert into STADIUM values ('STADIUM29','AT&T Center','San Antonio',18418);
+
+CREATE TABLE PLAYER(
+    P_ID        VARCHAR2(9) NOT NULL PRIMARY KEY,
+    P_NAME      VARCHAR(30),
+    POSITION    VARCHAR(30),
+    BACKNUMBER  NUMBER(2),
+    SALARY      VARCHAR2(30),
+    BIRTH       NUMBER(8),
+    P_HOMETOWN  VARCHAR2(9),
+    DEBUT       NUMBER(4),
+    FOREIGN KEY (T_ID) references TEAM(T_ID)
+); 
+
+insert into PLAYER values ('PLAYER01','Stephen Curry','PG',30,19880314,'Akron',2009,'TEAM21');
+insert into PLAYER values ('PLAYER02','Klay Thompson','SG',11,19900208,'Losangeles',2011,'TEAM21');
+insert into PLAYER values ('PLAYER03','Kevin Durant','SF',35,19880929,'Suitland-silver hill suitland',2009,'TEAM21');
+insert into PLAYER values ('PLAYER04','Draymond Green','PF',23,19900304,2012,'TEAM21');
+insert into PLAYER values ('PLAYER05','DeMarcus Cousins','C',15,19900813,2010,'TEAM21');
+insert into PLAYER values ('PLAYER06','Kyrie Irving','PG',11,19920323,'Melbourne(AUSTRAILIA)',2011,'TEAM01');
+insert into PLAYER values ('PLAYER07','Jaylen Brown','SG',7,19961024,'Marietta',2016,'TEAM01');
+insert into PLAYER values ('PLAYER08','Gordon Hayward','SF',20,19900323,'Butle',2010,'TEAM01');
+insert into PLAYER values ('PLAYER09','Marcus Morris','PF',13,19890902,'Kansas',2011,'TEAM01');
+insert into PLAYER values ('PLAYER10','Al Hoford','C',12,19860603,'Florida',2007,'TEAM01');
+insert into PLAYER values ('PLAYER11','Jarrett Allen', 'C',31,'$2034120',19980421,'San Diego',2017,'TEAM02');
+insert into PLAYER values ('PLAYER12','DeMarre Carroll','SF',9,'$15400000',19860727,'Birmingham',2009,'TEAM02');
+insert into PLAYER values ('PLAYER13','Allen Crabbe', 'SG',33,'$18500000',19920409,'Los Angeles',2013,'TEAM02');
+insert into PLAYER values ('PLAYER14','Ed Davis', 'PF', 17,'$4449000',19890605,'Washington',2010,'TEAM02');
+insert into PLAYER values ('PLAYER15','Spencer Dinwiddie','PG',8,'$1656092',19930406,'Los Angeles',2014,'TEAM02');
+
+
+
+
+
+
+
+
+
+
