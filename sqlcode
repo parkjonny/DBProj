@@ -1,3 +1,43 @@
+CREATE TABLE STADIUM (
+    S_ID        VARCHAR2(9) NOT NULL PRIMARY KEY,
+    S_NAME      VARCHAR2(30),
+    HOMETOWN    VARCHAR2(30),
+    SEAT        NUMBER(5, 0)
+); 
+
+insert into STADIUM values ('STADIUM01','TD Garden','Boston',18624);
+insert into STADIUM values ('STADIUM02','Barclays Center','Brooklyn',17732);
+insert into STADIUM values ('STADIUM03','Madison Square Garden','Manhattan',19812);
+insert into STADIUM values ('STADIUM04','Wells Fargo Center','Philadelphia',20478);
+insert into STADIUM values ('STADIUM05','Scotiabank Arena','Toronto',19800);
+insert into STADIUM values ('STADIUM06','United Center','Chicago',20917);
+insert into STADIUM values ('STADIUM07','Quicken Loans Arena','Cleveland',20562);
+insert into STADIUM values ('STADIUM08','Little Caesars Arena','Detroit',20491);
+insert into STADIUM values ('STADIUM09','Bankers Life Fieldhouse','Indianapolis',17923);
+insert into STADIUM values ('STADIUM10','Fiserv Forum','Milwaukee',17500);
+insert into STADIUM values ('STADIUM11','State Farm Arena','Atlanta',18118);
+insert into STADIUM values ('STADIUM12','Spectrum Center','Charlotte',19077);
+insert into STADIUM values ('STADIUM13','American Airlines Arena','Miami',19600);
+insert into STADIUM values ('STADIUM14','Amway Center','Orlando',18846);
+insert into STADIUM values ('STADIUM15','Capital One Arena','Washington D.C.',20356);
+insert into STADIUM values ('STADIUM16','Pepsi Center','Denver',19520);
+insert into STADIUM values ('STADIUM17','Target Center','Twin Cities',19356);
+insert into STADIUM values ('STADIUM18','Moda Center','Portland',19393);
+insert into STADIUM values ('STADIUM19','Chesapeake Energy Arena','Oklahoma City',18203);
+insert into STADIUM values ('STADIUM20','Vivint Smart Home Arena','Salt Lake City',18306);
+insert into STADIUM values ('STADIUM21','Oracle Arena','Oakland',19596);
+insert into STADIUM values ('STADIUM22','Staples Center','Los Angeles',19060);
+insert into STADIUM values ('STADIUM23','Talking Stick Resort Arena','Phoenix',18422);
+insert into STADIUM values ('STADIUM24','Golden 1 Center','Sacramento',17608);
+insert into STADIUM values ('STADIUM25','American Airlines Center','Dallas',19200);
+insert into STADIUM values ('STADIUM26','Toyota Center','Houston',18055);
+insert into STADIUM values ('STADIUM27','FedExForum','Memphis',18119);
+insert into STADIUM values ('STADIUM28','Smoothie King Center','New Orleans',16867);
+insert into STADIUM values ('STADIUM29','ATNT Center','San Antonio',18418);
+
+//여기까진 완료
+
+
 CREATE TABLE TEAM (
     T_ID        VARCHAR2(6) NOT NULL PRIMARY KEY,
     T_NAME      VARCHAR2(30),
@@ -40,44 +80,6 @@ insert into TEAM values ('TEAM28','Memphis Grizzlies','STADUIM27','Southwest','S
 insert into TEAM values ('TEAM29','New Orleans Pelicans','STADUIM28','Southwest','Southern','Alvin Gentry',29);
 insert into TEAM values ('TEAM30','San Antonio Spurs','STADUIM29','Southwest','Southern','Gregg Popovich',30);
 
-CREATE TABLE STADIUM (
-    S_ID        VARCHAR2(9) NOT NULL PRIMARY KEY,
-    S_NAME      VARCHAR(30),
-    HOMETOWN    VARCHAR(30),
-    HOME_T_ID   VARCHAR(6),
-    SEAT        NUMBER(7)
-); 
-
-insert into STADIUM values ('STADIUM01','TD Garden','Boston','TEAM01',18624);
-insert into STADIUM values ('STADIUM02','Barclays Center','Brooklyn',17732);
-insert into STADIUM values ('STADIUM03','Madison Square Garden','Manhattan',19812);
-insert into STADIUM values ('STADIUM04','Wells Fargo Center','Philadelphia',20478);
-insert into STADIUM values ('STADIUM05','Scotiabank Arena','Toronto',19800);
-insert into STADIUM values ('STADIUM06','United Center','Chicago',20917);
-insert into STADIUM values ('STADIUM07','Quicken Loans Arena','Cleveland',20562);
-insert into STADIUM values ('STADIUM08','Little Caesars Arena','Detroit',20491);
-insert into STADIUM values ('STADIUM09','Bankers Life Fieldhouse','Indianapolis',17923);
-insert into STADIUM values ('STADIUM10','Fiserv Forum','Milwaukee',17500);
-insert into STADIUM values ('STADIUM11','State Farm Arena','Atlanta',18118);
-insert into STADIUM values ('STADIUM12','Spectrum Center','Charlotte',19077);
-insert into STADIUM values ('STADIUM13','American Airlines Arena','Miami',19600);
-insert into STADIUM values ('STADIUM14','Amway Center','Orlando',18846);
-insert into STADIUM values ('STADIUM15','Capital One Arena','Washington D.C.',20356);
-insert into STADIUM values ('STADIUM16','Pepsi Center','Denver',19520);
-insert into STADIUM values ('STADIUM17','Target Center','Twin Cities',19356);
-insert into STADIUM values ('STADIUM18','Moda Center','Portland',19393);
-insert into STADIUM values ('STADIUM19','Chesapeake Energy Arena','Oklahoma City',18203);
-insert into STADIUM values ('STADIUM20','Vivint Smart Home Arena','Salt Lake City',18306);
-insert into STADIUM values ('STADIUM21','Oracle Arena','Oakland',19596);
-insert into STADIUM values ('STADIUM22','Staples Center','Los Angeles',19060);
-insert into STADIUM values ('STADIUM23','Talking Stick Resort Arena','Phoenix',18422);
-insert into STADIUM values ('STADIUM24','Golden 1 Center','Sacramento',17608);
-insert into STADIUM values ('STADIUM25','American Airlines Center','Dallas',19200);
-insert into STADIUM values ('STADIUM26','Toyota Center','Houston',18055);
-insert into STADIUM values ('STADIUM27','FedExForum','Memphis',18119);
-insert into STADIUM values ('STADIUM28','Smoothie King Center','New Orleans',16867);
-insert into STADIUM values ('STADIUM29','AT&T Center','San Antonio',18418);
-
 CREATE TABLE PLAYER(
     P_ID        VARCHAR2(9) NOT NULL PRIMARY KEY,
     P_NAME      VARCHAR(30),
@@ -105,13 +107,4 @@ insert into PLAYER values ('PLAYER12','DeMarre Carroll','SF',9,'$15400000',19860
 insert into PLAYER values ('PLAYER13','Allen Crabbe', 'SG',33,'$18500000',19920409,'Los Angeles',2013,'TEAM02');
 insert into PLAYER values ('PLAYER14','Ed Davis', 'PF', 17,'$4449000',19890605,'Washington',2010,'TEAM02');
 insert into PLAYER values ('PLAYER15','Spencer Dinwiddie','PG',8,'$1656092',19930406,'Los Angeles',2014,'TEAM02');
-
-
-
-
-
-
-
-
-
 
