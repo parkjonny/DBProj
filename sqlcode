@@ -1,11 +1,12 @@
 CREATE TABLE TEAM (
-    T_ID        VARCHAR2(6)     PRIMARY KEY,
+    T_ID        VARCHAR2(6) NOT NULL PRIMARY KEY,
     T_NAME      VARCHAR2(30),
-    S_ID        VARCHAR2(30),
+    S_ID        VARCHAR2(30) NOT NULL,
     CONFERENCE  VARCHAR2(15),
     DIVISION    VARCHAR2(15),
     DIRECTOR    VARCHAR2(30),
-    RANK        NUMBER(2,0)
+    RANK        NUMBER(2,0),
+    FOREIGN KEY (S_ID) references STADIUM(S_ID)
 );
  
 insert into TEAM values ('TEAM01','Boston Celtics','STADUIM01','Eastern','Atlantic','Brad Stevens',1);
@@ -40,15 +41,14 @@ insert into TEAM values ('TEAM29','New Orleans Pelicans','STADUIM28','Southwest'
 insert into TEAM values ('TEAM30','San Antonio Spurs','STADUIM29','Southwest','Southern','Gregg Popovich',30);
 
 CREATE TABLE STADIUM (
-    S_ID        VARCHAR2(9) PRIMARY KEY,
+    S_ID        VARCHAR2(9) NOT NULL PRIMARY KEY,
     S_NAME      VARCHAR(30),
     HOMETOWN    VARCHAR(30),
-    SEAT        NUMBER(7),
     HOME_T_ID   VARCHAR(6),
-    AWAY_T_ID   VARCHAR(6)
+    SEAT        NUMBER(7)
 ); 
 
-insert into STADIUM values ('STADIUM01','TD Garden','Boston',18624);
+insert into STADIUM values ('STADIUM01','TD Garden','Boston','TEAM01',18624);
 insert into STADIUM values ('STADIUM02','Barclays Center','Brooklyn',17732);
 insert into STADIUM values ('STADIUM03','Madison Square Garden','Manhattan',19812);
 insert into STADIUM values ('STADIUM04','Wells Fargo Center','Philadelphia',20478);
