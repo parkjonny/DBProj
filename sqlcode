@@ -80,14 +80,15 @@ insert into TEAM values ('TEAM30','San Antonio Spurs','STADIUM29','Southern','So
 
 CREATE TABLE PLAYER(
     P_ID        VARCHAR2(9) NOT NULL PRIMARY KEY,
-    P_NAME      VARCHAR(30),
-    POSITION    VARCHAR(2),
-    BACKNUMBER  NUMBER(2, 0),
-    BIRTH       NUMBER(8),
-    COLLEGE  VARCHAR2(9),
-    DEBUT       NUMBER(4),
+    P_NAME      VARCHAR2(30),
+    POSITION    VARCHAR2(2),
+    BACKNUMBER  NUMBER(2,0),
+    BIRTH       NUMBER(8,0),
+    COLLEGE     VARCHAR2(20),
+    DEBUT       NUMBER(4,0),
+    T_ID        VARCHAR2(6) NOT NULL,
     CONSTRAINT FK_PLAYER FOREIGN KEY(T_ID) REFERENCES TEAM(T_ID)
-); 
+);
 
 /*Boston Celtics*/
 insert into PLAYER values ('PLAYER001','Kyrie Irving','PG',11,19920323,'Duke',2011,'TEAM01');
@@ -192,7 +193,7 @@ insert into PLAYER values ('PLAYER071','Eric Bledsoe','PG',6,19891209,'UCLA',201
 insert into PLAYER values ('PLAYER072','Malcolm Brogdon','SG',13,19921211,'Virginia',2016,'TEAM15');
 insert into PLAYER values ('PLAYER073','Khris Middleton','SF',22,19910812,'Texas ANM',2012,'TEAM15');
 insert into PLAYER values ('PLAYER074','Giannis Antetokounmpo','PF',34,19941206,null,2013,'TEAM15');
-insert into PLAYER values ('PLAYER075','Brook Lopez','C',11,197704014,'Stanford',2008,'TEAM15');
+insert into PLAYER values ('PLAYER075','Brook Lopez','C',11,19770414,'Stanford',2008,'TEAM15');
 
 /*Dallas Mavericks*/
 insert into PLAYER values ('PLAYER076','Luka Doncic','PG',77,19990228,null,2018,'TEAM16');
@@ -279,22 +280,22 @@ insert into PLAYER values ('PLAYER134','Dario Saric','PF',36,19940408,null,2014,
 insert into PLAYER values ('PLAYER135','Karl-Anthony Towns','C',32,19951115,'Kentucky',2015,'TEAM27');
 
 /*Oklahoma City Thunder*/
-insert into PLAYER values ('PLAYER131','Russell Westbrook','PG',0,19881112,'UCLA',2008,'TEAM28');
-insert into PLAYER values ('PLAYER132','Andre Roberson','SG',21,19911204,'Colorado',2013,'TEAM28');
-insert into PLAYER values ('PLAYER133','Paul George','SF',13,19900502,'Fresno State',2010,'TEAM28');
-insert into PLAYER values ('PLAYER134','Nerlens Noel','PF',3,19940410,'Kentucky',2013,'TEAM28');
-insert into PLAYER values ('PLAYER135','Steven Adams','C',12,19930720,'Pittsburgh',2013,'TEAM28');
+insert into PLAYER values ('PLAYER136','Russell Westbrook','PG',0,19881112,'UCLA',2008,'TEAM28');
+insert into PLAYER values ('PLAYER137','Andre Roberson','SG',21,19911204,'Colorado',2013,'TEAM28');
+insert into PLAYER values ('PLAYER138','Paul George','SF',13,19900502,'Fresno State',2010,'TEAM28');
+insert into PLAYER values ('PLAYER139','Nerlens Noel','PF',3,19940410,'Kentucky',2013,'TEAM28');
+insert into PLAYER values ('PLAYER140','Steven Adams','C',12,19930720,'Pittsburgh',2013,'TEAM28');
 
 /*Portland Trail Blazers*/
-insert into PLAYER values ('PLAYER136','Damian Lillard','PG',0,19900715,'Weber State',2012,'TEAM29');
-insert into PLAYER values ('PLAYER137','CJ McCollum','SG',3,19910919,'Lehigh',2013,'TEAM29');
-insert into PLAYER values ('PLAYER138','Maurice Harkless','SF',4,19930511,'St. Johns',2012,'TEAM29');
-insert into PLAYER values ('PLAYER139','Al-Farouq Aminu','PF',8,19900921,'Wake Forest',2010,'TEAM29');
-insert into PLAYER values ('PLAYER140','Jusuf Nurkic','C',27,19940823,null,2014,'TEAM29');
+insert into PLAYER values ('PLAYER141','Damian Lillard','PG',0,19900715,'Weber State',2012,'TEAM29');
+insert into PLAYER values ('PLAYER142','CJ McCollum','SG',3,19910919,'Lehigh',2013,'TEAM29');
+insert into PLAYER values ('PLAYER143','Maurice Harkless','SF',4,19930511,'St. Johns',2012,'TEAM29');
+insert into PLAYER values ('PLAYER144','Al-Farouq Aminu','PF',8,19900921,'Wake Forest',2010,'TEAM29');
+insert into PLAYER values ('PLAYER145','Jusuf Nurkic','C',27,19940823,null,2014,'TEAM29');
 
 /*Utah Jazz*/
-insert into PLAYER values ('PLAYER136','Ricky Rubio','PG',3,19901021,null,2009,'TEAM30');
-insert into PLAYER values ('PLAYER137','Donovan Mitchell','SG',45,19960907,'Louisville',2017,'TEAM30');
-insert into PLAYER values ('PLAYER138','Joe Ingles','SF',2,19871002,null,null,'TEAM30');
-insert into PLAYER values ('PLAYER139','Derrick Favors','PF',15,19910715,'Georgia Tech',2010,'TEAM30');
-insert into PLAYER values ('PLAYER140','Rudy Gobert','C',27,19920626,null,2013,'TEAM30');
+insert into PLAYER values ('PLAYER146','Ricky Rubio','PG',3,19901021,null,2009,'TEAM30');
+insert into PLAYER values ('PLAYER147','Donovan Mitchell','SG',45,19960907,'Louisville',2017,'TEAM30');
+insert into PLAYER values ('PLAYER148','Joe Ingles','SF',2,19871002,null,null,'TEAM30');
+insert into PLAYER values ('PLAYER149','Derrick Favors','PF',15,19910715,'Georgia Tech',2010,'TEAM30');
+insert into PLAYER values ('PLAYER150','Rudy Gobert','C',27,19920626,null,2013,'TEAM30');
