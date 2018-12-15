@@ -83,28 +83,64 @@ insert into TEAM values ('TEAM30','San Antonio Spurs','STADIUM29','Southern','So
 CREATE TABLE PLAYER(
     P_ID        VARCHAR2(9) NOT NULL PRIMARY KEY,
     P_NAME      VARCHAR(30),
-    POSITION    VARCHAR(30),
-    BACKNUMBER  NUMBER(2),
-    SALARY      VARCHAR2(30),
+    POSITION    VARCHAR(2),
+    BACKNUMBER  NUMBER(2, 0),
     BIRTH       NUMBER(8),
-    P_HOMETOWN  VARCHAR2(9),
+    COLLEGE  VARCHAR2(9),
     DEBUT       NUMBER(4),
-    FOREIGN KEY (T_ID) references TEAM(T_ID)
+    CONSTRAINT FK_PLAYER FOREIGN KEY(T_ID) REFERENCES TEAM(T_ID)
 ); 
 
-insert into PLAYER values ('PLAYER01','Stephen Curry','PG',30,19880314,'Akron',2009,'TEAM21');
-insert into PLAYER values ('PLAYER02','Klay Thompson','SG',11,19900208,'Losangeles',2011,'TEAM21');
-insert into PLAYER values ('PLAYER03','Kevin Durant','SF',35,19880929,'Suitland-silver hill suitland',2009,'TEAM21');
-insert into PLAYER values ('PLAYER04','Draymond Green','PF',23,19900304,2012,'TEAM21');
-insert into PLAYER values ('PLAYER05','DeMarcus Cousins','C',15,19900813,2010,'TEAM21');
-insert into PLAYER values ('PLAYER06','Kyrie Irving','PG',11,19920323,'Melbourne(AUSTRAILIA)',2011,'TEAM01');
-insert into PLAYER values ('PLAYER07','Jaylen Brown','SG',7,19961024,'Marietta',2016,'TEAM01');
-insert into PLAYER values ('PLAYER08','Gordon Hayward','SF',20,19900323,'Butle',2010,'TEAM01');
-insert into PLAYER values ('PLAYER09','Marcus Morris','PF',13,19890902,'Kansas',2011,'TEAM01');
-insert into PLAYER values ('PLAYER10','Al Hoford','C',12,19860603,'Florida',2007,'TEAM01');
-insert into PLAYER values ('PLAYER11','Jarrett Allen', 'C',31,'$2034120',19980421,'San Diego',2017,'TEAM02');
-insert into PLAYER values ('PLAYER12','DeMarre Carroll','SF',9,'$15400000',19860727,'Birmingham',2009,'TEAM02');
-insert into PLAYER values ('PLAYER13','Allen Crabbe', 'SG',33,'$18500000',19920409,'Los Angeles',2013,'TEAM02');
-insert into PLAYER values ('PLAYER14','Ed Davis', 'PF', 17,'$4449000',19890605,'Washington',2010,'TEAM02');
-insert into PLAYER values ('PLAYER15','Spencer Dinwiddie','PG',8,'$1656092',19930406,'Los Angeles',2014,'TEAM02');
+insert into PLAYER values ('PLAYER001','Kyrie Irving','PG',11,19920323,'Duke',2011,'TEAM01');
+insert into PLAYER values ('PLAYER002','Jaylen Brown','SG',7,19961024,'California',2016,'TEAM01');
+insert into PLAYER values ('PLAYER003','Jayson Tatum','SF',0,19980303,'Duke',2017,'TEAM01');
+insert into PLAYER values ('PLAYER004','Marcus Morris','PF',13,19890902,'Kansas',2011,'TEAM01');
+insert into PLAYER values ('PLAYER005','Al Horford','C',42,19860603,'Florida',2007,'TEAM01');
 
+insert into PLAYER values ('PLAYER006','DAngelo Russell','PG',1,19960223,'Ohio State',2015,'TEAM02');
+insert into PLAYER values ('PLAYER007','Allen Crabbe','SG',33,19920409,'California',2013,'TEAM02');
+insert into PLAYER values ('PLAYER008','DeMarre Carroll','SF',9,19860727,'Missouri',2009,'TEAM02');
+insert into PLAYER values ('PLAYER009','Kenneth Faried','PF',35,19891119,'Morehead State',2011,'TEAM02');
+insert into PLAYER values ('PLAYER010','Jarrett Allen','C',31,19980421,'Texas',2017,'TEAM02');
+
+insert into PLAYER values ('PLAYER011','Emmanuel Mudiay','PG',1,19960305,null,2015,'TEAM03');
+insert into PLAYER values ('PLAYER012','Tim Hardaway Jr.','SG',3,19920316,'Michigan',2013,'TEAM03');
+insert into PLAYER values ('PLAYER013','Mario Hezonja','SF',8,19950225,null,2015,'TEAM03');
+insert into PLAYER values ('PLAYER014','Kristaps Porzingis','PF',6,19950802,null,2015,'TEAM03');
+insert into PLAYER values ('PLAYER015','Enes Kanter','C',0,19920520,'Kentucky',2011,'TEAM03');
+
+insert into PLAYER values ('PLAYER016','Markelle Fultz','PG',20,19980529,'Washington',2017,'TEAM04');
+insert into PLAYER values ('PLAYER017','Jimmy Butler','SG',23,19890914,'Marquette',2011,'TEAM04');
+insert into PLAYER values ('PLAYER018','Ben Simmons','SF',25,19960720,'LSU',2016,'TEAM04');
+insert into PLAYER values ('PLAYER019','Wilson Chandler','PF',22,19870510,'DePaul',2007,'TEAM04');
+insert into PLAYER values ('PLAYER020','Joel Embiid','C',21,19940316,'Kansas',2014,'TEAM04');
+
+insert into PLAYER values ('PLAYER021','Kyle Lowry','PG',7,19860325,'Villanova',2006,'TEAM05');
+insert into PLAYER values ('PLAYER022','Danny Green','SG',14,19870622,'North Carolina',2009,'TEAM05');
+insert into PLAYER values ('PLAYER023','Kawhi Leonard','SF',2,19910629,'San Diego State',2011,'TEAM05');
+insert into PLAYER values ('PLAYER024','Serge Ibaka','PF',9,19890918,null,2008,'TEAM05');
+insert into PLAYER values ('PLAYER025','Jonas Valanciunas','C',17,19920506,null,2011,'TEAM05');
+
+insert into PLAYER values ('PLAYER026','Stephen Curry','PG',7,19860325,'Villanova',2006,'TEAM06');
+insert into PLAYER values ('PLAYER027','Klay Thompson','SG',11,19900208,'Washington State',2011,'TEAM06');
+insert into PLAYER values ('PLAYER028','Kevin Durant','SF',35,19880929,'Texas',2007,'TEAM06');
+insert into PLAYER values ('PLAYER029','Draymond Green','PF',23,19900304,'Michigan State',2012,'TEAM06');
+insert into PLAYER values ('PLAYER030','DeMarcus Cousins','C',0,19900813,'Kentucky',2010,'TEAM06');
+
+insert into PLAYER values ('PLAYER031','Patrick Beverley','PG',21,19880712,'Arkansas',2009,'TEAM07');
+insert into PLAYER values ('PLAYER032','Avery Bradley','SG',11,19901126,'Texas',2010,'TEAM07');
+insert into PLAYER values ('PLAYER033','Danilo Gallinari','SF',8,19880808,null,2008,'TEAM07');
+insert into PLAYER values ('PLAYER034','Montrezl Harrell','PF',5,19940126,'Louisville',2015,'TEAM07');
+insert into PLAYER values ('PLAYER035','Marcin Gortat','C',13,19840217,null,2005,'TEAM07');
+
+insert into PLAYER values ('PLAYER036','Lonzo Ball','PG',2,19971027,'UCLA',2017,'TEAM08');
+insert into PLAYER values ('PLAYER037','Brandon Ingram','SG',14,19971102,'Duke',2016,'TEAM08');
+insert into PLAYER values ('PLAYER038','LeBron James','SF',23,19841230,null,2003,'TEAM08');
+insert into PLAYER values ('PLAYER039','Kyle Kuzma','PF',0,19950724,'Utah',2017,'TEAM08');
+insert into PLAYER values ('PLAYER040','JaVale McGee','C',7,19880119,'Nevada',2008,'TEAM08');
+
+insert into PLAYER values ('PLAYER036','Lonzo Ball','PG',2,19971027,'UCLA',2017,'TEAM09');
+insert into PLAYER values ('PLAYER037','Brandon Ingram','SG',14,19971102,'Duke',2016,'TEAM09');
+insert into PLAYER values ('PLAYER038','LeBron James','SF',23,19841230,null,2003,'TEAM09');
+insert into PLAYER values ('PLAYER039','Kyle Kuzma','PF',0,19950724,'Utah',2017,'TEAM09');
+insert into PLAYER values ('PLAYER040','JaVale McGee','C',7,19880119,'Nevada',2008,'TEAM09');
