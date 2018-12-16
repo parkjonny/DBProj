@@ -149,7 +149,7 @@ insert into PLAYER values ('PLAYER039','Kyle Kuzma','PF',0,'1995-07-24','Utah',2
 insert into PLAYER values ('PLAYER040','JaVale McGee','C',7,'1988-01-19','Nevada',2008,'TEAM08');
 
 /*Phoenix Suns*/
-insert into PLAYER values ('PLAYER041','DeAnthony Melton','PG',14,'1998-05-28','USC',2018,'TEAM09');
+insert into PLAYER values ('PLAYER041','De`Anthony Melton','PG',14,'1998-05-28','USC',2018,'TEAM09');
 insert into PLAYER values ('PLAYER042','Devin Booker','SG',1,'1996-10-30','Kentucky',2015,'TEAM09');
 insert into PLAYER values ('PLAYER043','Trevor Ariza','SF',3,'1985-06-30','UCLA',2004,'TEAM09');
 insert into PLAYER values ('PLAYER044','Richaun Holmes','PF',21,'1993-10-15','Bowling Green',2015,'TEAM09');
@@ -222,7 +222,7 @@ insert into PLAYER values ('PLAYER090','Marc Gasol','C',33,'1985-01-29',null,200
 insert into PLAYER values ('PLAYER091','Jrue Holiday','PG',11,'1990-06-12','UCLA',2009,'TEAM19');
 insert into PLAYER values ('PLAYER092','Tim Frazier','SG',10,'1990-11-01','Penn State',null,'TEAM19');
 insert into PLAYER values ('PLAYER093','Nikola Mirotic','SF',3,'1991-02-11',null,2011,'TEAM19');
-insert into PLAYER values ('PLAYER094','Juilius Randle','PF',30,'1994-11-29','Kentucky',2014,'TEAM19');
+insert into PLAYER values ('PLAYER094','Julius Randle','PF',30,'1994-11-29','Kentucky',2014,'TEAM19');
 insert into PLAYER values ('PLAYER095','Anthony Davis','C',23,'1993-03-11','Kentucky',2012,'TEAM19');
 
 /*San Antonio Spurs*/
@@ -301,3 +301,218 @@ insert into PLAYER values ('PLAYER147','Donovan Mitchell','SG',45,'1996-09-07','
 insert into PLAYER values ('PLAYER148','Joe Ingles','SF',2,'1987-10-02',null,null,'TEAM30');
 insert into PLAYER values ('PLAYER149','Derrick Favors','PF',15,'1991-07-15','Georgia Tech',2010,'TEAM30');
 insert into PLAYER values ('PLAYER150','Rudy Gobert','C',27,'1992-06-26',null,2013,'TEAM30');
+
+CREATE TABLE PHYSIC (
+    P_ID        VARCHAR2(9) NOT NULL,
+    HEIGHT      NUMBER(3,0),
+    WEIGHT      NUMBER(3,0) 
+);
+/*Boston Celtics*/
+insert into PHYSIC values ('PLAYER001',191,88);
+insert into PHYSIC values ('PLAYER002',201,100);
+insert into PHYSIC values ('PLAYER003',203,94);
+insert into PHYSIC values ('PLAYER004',206,107);
+insert into PHYSIC values ('PLAYER005',208,111);
+
+/*Brooklyn Nets*/
+insert into PHYSIC values ('PLAYER006',196,90);
+insert into PHYSIC values ('PLAYER007',198,96);
+insert into PHYSIC values ('PLAYER008',203,98);
+insert into PHYSIC values ('PLAYER009',203,100);
+insert into PHYSIC values ('PLAYER010',211,108);
+
+/*New York Knicks*/
+insert into PHYSIC values ('PLAYER011',196,91);
+insert into PHYSIC values ('PLAYER012',198,93);
+insert into PHYSIC values ('PLAYER013',203,102);
+insert into PHYSIC values ('PLAYER014',221,109);
+insert into PHYSIC values ('PLAYER015',211,113);
+
+/*Philadelphia 76ers*/
+insert into PHYSIC values ('PLAYER016',193,91);
+insert into PHYSIC values ('PLAYER017',203,105);
+insert into PHYSIC values ('PLAYER018',208,104);
+insert into PHYSIC values ('PLAYER019',206,102);
+insert into PHYSIC values ('PLAYER020',213,113);
+
+/*Toronto Raptors*/
+insert into PHYSIC values ('PLAYER021',185,89);
+insert into PHYSIC values ('PLAYER022',198,98);
+insert into PHYSIC values ('PLAYER023',201,104);
+insert into PHYSIC values ('PLAYER024',208,107);
+insert into PHYSIC values ('PLAYER025',213,120);
+
+/*Golden State Warriors*/
+insert into PHYSIC values ('PLAYER026',191,86);
+insert into PHYSIC values ('PLAYER027',201,98);
+insert into PHYSIC values ('PLAYER028',206,109);
+insert into PHYSIC values ('PLAYER029',201,104);
+insert into PHYSIC values ('PLAYER030',211,122);
+
+/*Los Angeles Clippers*/
+insert into PHYSIC values ('PLAYER031',185,84);
+insert into PHYSIC values ('PLAYER032',188,82);
+insert into PHYSIC values ('PLAYER033',208,102);
+insert into PHYSIC values ('PLAYER034',203,109);
+insert into PHYSIC values ('PLAYER035',211,109);
+
+/*Los Angeles Lakers*/
+insert into PHYSIC values ('PLAYER036',198,95);
+insert into PHYSIC values ('PLAYER037',206,86);
+insert into PHYSIC values ('PLAYER038',203,113);
+insert into PHYSIC values ('PLAYER039',206,100);
+insert into PHYSIC values ('PLAYER040',213,122);
+
+/*Phoenix Suns*/
+insert into PHYSIC values ('PLAYER041',193,91);
+insert into PHYSIC values ('PLAYER042',198,95);
+insert into PHYSIC values ('PLAYER043',203,98);
+insert into PHYSIC values ('PLAYER044',208,107);
+insert into PHYSIC values ('PLAYER045',216,113);
+
+/*Sacramento Kings*/
+insert into PHYSIC values ('PLAYER046',191,79);
+insert into PHYSIC values ('PLAYER047',193,97);
+insert into PHYSIC values ('PLAYER048',198,93);
+insert into PHYSIC values ('PLAYER049',211,106);
+insert into PHYSIC values ('PLAYER050',213,109);
+
+/*Chicago Bulls*/
+insert into PHYSIC values ('PLAYER051',193,93);
+insert into PHYSIC values ('PLAYER052',196,91);
+insert into PHYSIC values ('PLAYER053',203,111);
+insert into PHYSIC values ('PLAYER054',213,109);
+insert into PHYSIC values ('PLAYER055',208,116);
+
+/*Cleveland Cavaliers*/
+insert into PHYSIC values ('PLAYER056',188,86);
+insert into PHYSIC values ('PLAYER057',193,93);
+insert into PHYSIC values ('PLAYER058',203,98);
+insert into PHYSIC values ('PLAYER059',208,114);
+insert into PHYSIC values ('PLAYER060',208,108);
+
+/*Detroit Pistons*/
+insert into PHYSIC values ('PLAYER061',191,94);
+insert into PHYSIC values ('PLAYER062',201,93);
+insert into PHYSIC values ('PLAYER063',196,93);
+insert into PHYSIC values ('PLAYER064',208,113);
+insert into PHYSIC values ('PLAYER065',211,127);
+
+/*Indiana Pacers*/
+insert into PHYSIC values ('PLAYER066',183,79);
+insert into PHYSIC values ('PLAYER067',193,95);
+insert into PHYSIC values ('PLAYER068',203,98);
+insert into PHYSIC values ('PLAYER069',211,109);
+insert into PHYSIC values ('PLAYER070',211,113);
+
+/*Milwaukee Bucks*/
+insert into PHYSIC values ('PLAYER071',185,93);
+insert into PHYSIC values ('PLAYER072',196,104);
+insert into PHYSIC values ('PLAYER073',203,101);
+insert into PHYSIC values ('PLAYER074',211,110);
+insert into PHYSIC values ('PLAYER075',213,122);
+
+/*Dallas Mavericks*/
+insert into PHYSIC values ('PLAYER076',201,99);
+insert into PHYSIC values ('PLAYER077',196,104);
+insert into PHYSIC values ('PLAYER078',191,88);
+insert into PHYSIC values ('PLAYER079',213,111);
+insert into PHYSIC values ('PLAYER080',211,120);
+
+/*Houston Rockets*/
+insert into PHYSIC values ('PLAYER081',185,79);
+insert into PHYSIC values ('PLAYER082',196,100);
+insert into PHYSIC values ('PLAYER083',201,95);
+insert into PHYSIC values ('PLAYER084',198,111);
+insert into PHYSIC values ('PLAYER085',208,109);
+
+/*Memphis Grizzlies*/
+insert into PHYSIC values ('PLAYER086',185,79);
+insert into PHYSIC values ('PLAYER087',198,88);
+insert into PHYSIC values ('PLAYER088',208,104);
+insert into PHYSIC values ('PLAYER089',211,110);
+insert into PHYSIC values ('PLAYER090',216,116);
+
+/*New Orleans Pelicans*/
+insert into PHYSIC values ('PLAYER091',193,93);
+insert into PHYSIC values ('PLAYER092',185,77);
+insert into PHYSIC values ('PLAYER093',208,113);
+insert into PHYSIC values ('PLAYER094',206,113);
+insert into PHYSIC values ('PLAYER095',208,115);
+
+/*San Antonio Spurs*/
+insert into PHYSIC values ('PLAYER096',191,86);
+insert into PHYSIC values ('PLAYER097',201,100);
+insert into PHYSIC values ('PLAYER098',203,104);
+insert into PHYSIC values ('PLAYER099',211,118);
+insert into PHYSIC values ('PLAYER100',213,113);
+
+/*Atlanta Hawks*/
+insert into PHYSIC values ('PLAYER101',188,82);
+insert into PHYSIC values ('PLAYER102',198,100);
+insert into PHYSIC values ('PLAYER103',203,100);
+insert into PHYSIC values ('PLAYER104',208,106);
+insert into PHYSIC values ('PLAYER105',213,111);
+
+/*Charlotte Hornets*/
+insert into PHYSIC values ('PLAYER106',185,83);
+insert into PHYSIC values ('PLAYER107',196,84);
+insert into PHYSIC values ('PLAYER108',203,91);
+insert into PHYSIC values ('PLAYER109',206,108);
+insert into PHYSIC values ('PLAYER110',213,109);
+
+/*Miami Heat*/
+insert into PHYSIC values ('PLAYER111',191,86);
+insert into PHYSIC values ('PLAYER112',193,100);
+insert into PHYSIC values ('PLAYER113',201,91);
+insert into PHYSIC values ('PLAYER114',213,109);
+insert into PHYSIC values ('PLAYER115',213,120);
+
+/*Orlando Magic*/
+insert into PHYSIC values ('PLAYER116',183,83);
+insert into PHYSIC values ('PLAYER117',201,93);
+insert into PHYSIC values ('PLAYER118',198,88);
+insert into PHYSIC values ('PLAYER119',206,100);
+insert into PHYSIC values ('PLAYER120',213,118);
+
+/*Washington Wizards*/
+insert into PHYSIC values ('PLAYER121',193,95);
+insert into PHYSIC values ('PLAYER122',196,94);
+insert into PHYSIC values ('PLAYER123',203,90);
+insert into PHYSIC values ('PLAYER124',208,111);
+insert into PHYSIC values ('PLAYER125',211,120);
+
+/*Denver Nuggets*/
+insert into PHYSIC values ('PLAYER126',193,94);
+insert into PHYSIC values ('PLAYER127',198,86);
+insert into PHYSIC values ('PLAYER128',206,104);
+insert into PHYSIC values ('PLAYER129',203,112);
+insert into PHYSIC values ('PLAYER130',213,113);
+
+/*Minnesota Timberwolves*/
+insert into PHYSIC values ('PLAYER131',188,88);
+insert into PHYSIC values ('PLAYER132',191,91);
+insert into PHYSIC values ('PLAYER133',203,88);
+insert into PHYSIC values ('PLAYER134',208,112);
+insert into PHYSIC values ('PLAYER135',213,112);
+
+/*Oklahoma City Thunder*/
+insert into PHYSIC values ('PLAYER136',191,91);
+insert into PHYSIC values ('PLAYER137',201,95);
+insert into PHYSIC values ('PLAYER138',206,100);
+insert into PHYSIC values ('PLAYER139',211,100);
+insert into PHYSIC values ('PLAYER140',213,120);
+
+/*Portland Trail Blazers*/
+insert into PHYSIC values ('PLAYER141',191,88);
+insert into PHYSIC values ('PLAYER142',191,86);
+insert into PHYSIC values ('PLAYER143',206,100);
+insert into PHYSIC values ('PLAYER144',206,100);
+insert into PHYSIC values ('PLAYER145',213,125);
+
+/*Utah Jazz*/
+insert into PHYSIC values ('PLAYER146',193,86);
+insert into PHYSIC values ('PLAYER147',191,98);
+insert into PHYSIC values ('PLAYER148',203,103);
+insert into PHYSIC values ('PLAYER149',208,120);
+insert into PHYSIC values ('PLAYER150',216,111);
