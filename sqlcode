@@ -42,43 +42,42 @@ CREATE TABLE TEAM (
     CONFERENCE  VARCHAR2(15),
     DIVISION    VARCHAR2(15),
     DIRECTOR    VARCHAR2(30),
-    RANK        NUMBER(2,0),
     WIN         NUMBER(2,0),
     LOSE        NUMBER(2,0),
     CONSTRAINT FK_TEAM FOREIGN KEY(S_ID) REFERENCES STADIUM(S_ID)
 );
 
-insert into TEAM values ('TEAM01','Boston Celtics','STADIUM01','Eastern','Atlantic','Brad Stevens',1,18,11);
-insert into TEAM values ('TEAM02','Brooklyn Nets','STADIUM02','Eastern','Atlantic','Kenny Atkinson',2,12,18);
-insert into TEAM values ('TEAM03','New York Knicks','STADIUM03','Eastern','Atlantic','David Fizdale',3,9,21);
-insert into TEAM values ('TEAM04','Philadelphia 76ers','STADIUM04','Eastern','Atlantic','Brett Brown',4,19,11);
-insert into TEAM values ('TEAM05','Toronto Raptors','STADIUM05','Eastern','Atlantic','Nick Nurse',5,23,8);
-insert into TEAM values ('TEAM06','Chicago Bulls','STADIUM06','Eastern','Central','Fred Hoiberg',6,7,23);
-insert into TEAM values ('TEAM07','Cleveland Cavaliers','STADIUM07','Eastern','Central','Larry Drew',7,7,22);
-insert into TEAM values ('TEAM08','Detroit Pistons','STADIUM08','Eastern','Central','Dwayne Casey',8,14,13);
-insert into TEAM values ('TEAM09','Indiana Pacers','STADIUM09','Eastern','Central','Nate McMillan',9,19,10);
-insert into TEAM values ('TEAM10','Milwaukee Bucks','STADIUM10','Eastern','Central','Mike Budenholzer',10,19,9);
-insert into TEAM values ('TEAM11','Atlanta Hawks','STADIUM11','Eastern','Southeast','Lloyd Pierce',11,6,22);
-insert into TEAM values ('TEAM12','Charlotte Hornets','STADIUM12','Eastern','Southeast','James Borrego',12,14,15);
-insert into TEAM values ('TEAM13','Miami Heat','STADIUM13','Eastern','Southeast','Erik Spoelstra',13,12,16);
-insert into TEAM values ('TEAM14','Orlando Magic','STADIUM14','Eastern','Southeast','Steve Clifford',14,14,15);
-insert into TEAM values ('TEAM15','Washington Wizards','STADIUM15','Eastern','Southeast','Scott Brooks',15,11,18);
+insert into TEAM values ('TEAM01','Boston Celtics','STADIUM01','Eastern','Atlantic','Brad Stevens',18,11);
+insert into TEAM values ('TEAM02','Brooklyn Nets','STADIUM02','Eastern','Atlantic','Kenny Atkinson',12,18);
+insert into TEAM values ('TEAM03','New York Knicks','STADIUM03','Eastern','Atlantic','David Fizdale',9,21);
+insert into TEAM values ('TEAM04','Philadelphia 76ers','STADIUM04','Eastern','Atlantic','Brett Brown',19,11);
+insert into TEAM values ('TEAM05','Toronto Raptors','STADIUM05','Eastern','Atlantic','Nick Nurse',23,8);
+insert into TEAM values ('TEAM06','Chicago Bulls','STADIUM06','Eastern','Central','Fred Hoiberg',7,23);
+insert into TEAM values ('TEAM07','Cleveland Cavaliers','STADIUM07','Eastern','Central','Larry Drew',7,22);
+insert into TEAM values ('TEAM08','Detroit Pistons','STADIUM08','Eastern','Central','Dwayne Casey',14,13);
+insert into TEAM values ('TEAM09','Indiana Pacers','STADIUM09','Eastern','Central','Nate McMillan',19,10);
+insert into TEAM values ('TEAM10','Milwaukee Bucks','STADIUM10','Eastern','Central','Mike Budenholzer',19,9);
+insert into TEAM values ('TEAM11','Atlanta Hawks','STADIUM11','Eastern','Southeast','Lloyd Pierce',6,22);
+insert into TEAM values ('TEAM12','Charlotte Hornets','STADIUM12','Eastern','Southeast','James Borrego',14,15);
+insert into TEAM values ('TEAM13','Miami Heat','STADIUM13','Eastern','Southeast','Erik Spoelstra',12,16);
+insert into TEAM values ('TEAM14','Orlando Magic','STADIUM14','Eastern','Southeast','Steve Clifford',14,15);
+insert into TEAM values ('TEAM15','Washington Wizards','STADIUM15','Eastern','Southeast','Scott Brooks',11,18);
 
-insert into TEAM values ('TEAM16','Denver Nuggets','STADIUM16','Southern','Northwest','Michael Malone',16,19,9);
-insert into TEAM values ('TEAM17','Minnesota Timberwolves','STADIUM17','Southern','Northwest','Tom Thibodeau',17,13,16);
-insert into TEAM values ('TEAM18','Portland Trail Blazers','STADIUM18','Southern','Northwest','Terry Stotts',18,16,13);
-insert into TEAM values ('TEAM19','Oklahoma City Thunder','STADIUM19','Southern','Northwest','Billy Donovan',19,18,10);
-insert into TEAM values ('TEAM20','Utah Jazz','STADIUM20','Southern','Northwest','Quin Snyder',20,14,16);
-insert into TEAM values ('TEAM21','Golden State Warriors','STADIUM21','Southern','Pacific','Steve Kerr',21,20,10);
-insert into TEAM values ('TEAM22','Los Angeles Clippers','STADIUM22','Southern','Pacific','Doc Rivers',22,17,12);
-insert into TEAM values ('TEAM23','Los Angeles Lakers','STADIUM22','Southern','Pacific','Luke Walton',23,18,11);
-insert into TEAM values ('TEAM24','Phoenix Suns','STADIUM23','Southern','Pacific','Igor Kokoskov',24,6,24);
-insert into TEAM values ('TEAM25','Sacramento Kings','STADIUM24','Southern','Pacific','Dave Joerger',25,15,13);
-insert into TEAM values ('TEAM26','Dallas Mavericks','STADIUM25','Southern','Southwest','Rick Carlisle',26,15,12);
-insert into TEAM values ('TEAM27','Houston Rockets','STADIUM26','Southern','Southwest','Mike D`Antoni',27,14,14);
-insert into TEAM values ('TEAM28','Memphis Grizzlies','STADIUM27','Southern','Southwest','J.B. Bickerstaff',28,16,13);
-insert into TEAM values ('TEAM29','New Orleans Pelicans','STADIUM28','Southern','Southwest','Alvin Gentry',29,15,15);
-insert into TEAM values ('TEAM30','San Antonio Spurs','STADIUM29','Southern','Southwest','Gregg Popovich',30,15,15);
+insert into TEAM values ('TEAM16','Denver Nuggets','STADIUM16','Southern','Northwest','Michael Malone',19,9);
+insert into TEAM values ('TEAM17','Minnesota Timberwolves','STADIUM17','Southern','Northwest','Tom Thibodeau',13,16);
+insert into TEAM values ('TEAM18','Portland Trail Blazers','STADIUM18','Southern','Northwest','Terry Stotts',16,13);
+insert into TEAM values ('TEAM19','Oklahoma City Thunder','STADIUM19','Southern','Northwest','Billy Donovan',18,10);
+insert into TEAM values ('TEAM20','Utah Jazz','STADIUM20','Southern','Northwest','Quin Snyder',14,16);
+insert into TEAM values ('TEAM21','Golden State Warriors','STADIUM21','Southern','Pacific','Steve Kerr',20,10);
+insert into TEAM values ('TEAM22','Los Angeles Clippers','STADIUM22','Southern','Pacific','Doc Rivers',17,12);
+insert into TEAM values ('TEAM23','Los Angeles Lakers','STADIUM22','Southern','Pacific','Luke Walton',18,11);
+insert into TEAM values ('TEAM24','Phoenix Suns','STADIUM23','Southern','Pacific','Igor Kokoskov',6,24);
+insert into TEAM values ('TEAM25','Sacramento Kings','STADIUM24','Southern','Pacific','Dave Joerger',15,13);
+insert into TEAM values ('TEAM26','Dallas Mavericks','STADIUM25','Southern','Southwest','Rick Carlisle',15,12);
+insert into TEAM values ('TEAM27','Houston Rockets','STADIUM26','Southern','Southwest','Mike D`Antoni',14,14);
+insert into TEAM values ('TEAM28','Memphis Grizzlies','STADIUM27','Southern','Southwest','J.B. Bickerstaff',16,13);
+insert into TEAM values ('TEAM29','New Orleans Pelicans','STADIUM28','Southern','Southwest','Alvin Gentry',15,15);
+insert into TEAM values ('TEAM30','San Antonio Spurs','STADIUM29','Southern','Southwest','Gregg Popovich',15,15);
 
 alter session set nls_date_format='YYYY-MM-DD';
 
